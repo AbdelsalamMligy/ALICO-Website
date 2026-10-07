@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="t d">
+  <title id="t">Coming soon - under construction</title>
+  <desc id="d">A yellow construction sign reading Coming Soon, topped with a hard hat, standing behind a striped barrier with two traffic cones.</desc>
+  <defs>
+    <pattern id="hazard" width="44" height="44" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="44" height="44" fill="#ffc107"/>
+      <rect width="22" height="44" fill="#212121"/>
+    </pattern>
+  </defs>
+
+  <!-- sky -->
+  <rect width="800" height="460" fill="#e8f1fa"/>
+  <circle cx="690" cy="80" r="38" fill="#ffd54f"/>
+  <g fill="#fff">
+    <ellipse cx="150" cy="70" rx="55" ry="20"/>
+    <ellipse cx="185" cy="58" rx="40" ry="18"/>
+    <ellipse cx="560" cy="60" rx="45" ry="16"/>
+    <ellipse cx="585" cy="50" rx="32" ry="14"/>
+  </g>
+
+  <!-- gears -->
+  <g opacity="0.55">
+    <g transform="translate(95 190)">
+      <circle r="34" fill="none" stroke="#90a4ae" stroke-width="12" stroke-dasharray="9 8.8"/>
+      <circle r="29" fill="#90a4ae"/>
+      <circle r="11" fill="#e8f1fa"/>
+    </g>
+    <g transform="translate(715 215)">
+      <circle r="26" fill="none" stroke="#90a4ae" stroke-width="10" stroke-dasharray="7 6.8"/>
+      <circle r="22" fill="#90a4ae"/>
+      <circle r="8" fill="#e8f1fa"/>
+    </g>
+  </g>
+
+  <!-- ground -->
+  <rect y="390" width="800" height="70" fill="#c9c2b2"/>
+  <rect y="390" width="800" height="8" fill="#b3ab98"/>
+
+  <!-- sign posts -->
+  <rect x="220" y="280" width="14" height="112" fill="#6d6d6d"/>
+  <rect x="566" y="280" width="14" height="112" fill="#6d6d6d"/>
+
+  <!-- hard hat -->
+  <rect x="385" y="34" width="30" height="40" rx="6" fill="#e65100"/>
+  <path d="M335 92 A65 52 0 0 1 465 92 Z" fill="#fb8c00"/>
+  <rect x="318" y="88" width="164" height="14" rx="7" fill="#e65100"/>
+
+  <!-- sign -->
+  <rect x="170" y="102" width="460" height="190" rx="16" fill="#ffc107" stroke="#212121" stroke-width="6"/>
+  <rect x="186" y="118" width="428" height="158" rx="8" fill="none" stroke="#212121" stroke-width="3"/>
+  <g font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="800" fill="#212121" text-anchor="middle">
+    <text x="400" y="200" font-size="52">COMING SOON</text>
+    <text x="400" y="250" font-size="25" letter-spacing="3">UNDER CONSTRUCTION</text>
+  </g>
+
+  <!-- barrier -->
+  <rect x="110" y="320" width="580" height="46" fill="url(#hazard)" stroke="#212121" stroke-width="4"/>
+  <rect x="140" y="366" width="14" height="26" fill="#6d6d6d"/>
+  <rect x="646" y="366" width="14" height="26" fill="#6d6d6d"/>
+
+  <!-- cones -->
+  <g id="cone">
+    <path d="M55 388 L68 318 L82 318 L95 388 Z" fill="#ff6d00"/>
+    <polygon points="64.3,338 85.7,338 88.9,355 61.1,355" fill="#fff"/>
+    <rect x="49" y="386" width="52" height="8" rx="3" fill="#e65100"/>
+  </g>
+  <use href="#cone" x="655"/>
+</svg>
