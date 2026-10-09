@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="t d">
   <title id="t">Coming soon - under construction</title>
-  <desc id="d">A navy and silver construction sign reading Coming Soon, topped with a hard hat inside a glowing ring, standing behind a striped barrier with two traffic cones.</desc>
+  <desc id="d">A navy and silver construction sign reading Coming Soon, topped with a hard hat inside a blue ring, standing behind a striped barrier with two traffic cones under a pale blue sky.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#000d2b"/>
-      <stop offset="1" stop-color="#05205f"/>
+      <stop offset="0" stop-color="#c4dcf8"/>
+      <stop offset="1" stop-color="#f1f7ff"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.55">
-      <stop offset="0" stop-color="#1959d5" stop-opacity="0.45"/>
-      <stop offset="1" stop-color="#1959d5" stop-opacity="0"/>
+    <radialGradient id="glow" cx="0.5" cy="0.45" r="0.55">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#4da3ff"/>
@@ -20,73 +20,73 @@
       <stop offset="1" stop-color="#eef2f8"/>
     </linearGradient>
     <linearGradient id="ring" x1="0" y1="0.3" x2="1" y2="0.6">
-      <stop offset="0" stop-color="#eef2f8"/>
-      <stop offset="0.55" stop-color="#5aa9ff"/>
-      <stop offset="1" stop-color="#1959d5"/>
+      <stop offset="0" stop-color="#0b2a80"/>
+      <stop offset="0.55" stop-color="#1959d5"/>
+      <stop offset="1" stop-color="#4da3ff"/>
     </linearGradient>
     <linearGradient id="face" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#0b2a80"/>
       <stop offset="1" stop-color="#031447"/>
     </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a9bddd"/>
+      <stop offset="1" stop-color="#8ea6cf"/>
+    </linearGradient>
     <radialGradient id="flare">
       <stop offset="0" stop-color="#fff" stop-opacity="1"/>
-      <stop offset="0.25" stop-color="#8cc4ff" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#1959d5" stop-opacity="0"/>
+      <stop offset="0.3" stop-color="#8cc4ff" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#4da3ff" stop-opacity="0"/>
     </radialGradient>
     <pattern id="hazard" width="44" height="44" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <rect width="44" height="44" fill="#e8edf5"/>
+      <rect width="44" height="44" fill="#ffffff"/>
       <rect width="22" height="44" fill="#1959d5"/>
     </pattern>
   </defs>
 
-  <!-- background -->
+  <!-- sky -->
   <rect width="800" height="460" fill="url(#bg)"/>
   <rect width="800" height="460" fill="url(#glow)"/>
-  <g fill="#fff">
-    <circle cx="70" cy="60" r="1.6" opacity="0.7"/>
-    <circle cx="140" cy="115" r="1.2" opacity="0.5"/>
-    <circle cx="690" cy="55" r="1.8" opacity="0.7"/>
-    <circle cx="740" cy="130" r="1.2" opacity="0.5"/>
-    <circle cx="640" cy="95" r="1" opacity="0.5"/>
-    <circle cx="60" cy="300" r="1.2" opacity="0.4"/>
-    <circle cx="745" cy="290" r="1.4" opacity="0.5"/>
+  <g fill="#fff" opacity="0.95">
+    <ellipse cx="95" cy="82" rx="55" ry="19"/>
+    <ellipse cx="130" cy="70" rx="38" ry="17"/>
+    <ellipse cx="700" cy="100" rx="50" ry="17"/>
+    <ellipse cx="728" cy="89" rx="34" ry="15"/>
   </g>
 
   <!-- gears -->
-  <g opacity="0.45">
-    <g transform="translate(85 200)">
-      <circle r="34" fill="none" stroke="#2f6fe0" stroke-width="12" stroke-dasharray="9 8.8"/>
-      <circle r="29" fill="#2f6fe0"/>
-      <circle r="11" fill="#031447"/>
+  <g opacity="0.7" fill="none" stroke="#8fb0e6">
+    <g transform="translate(85 215)">
+      <circle r="34" stroke-width="12" stroke-dasharray="9 8.8"/>
+      <circle r="20" stroke-width="18"/>
     </g>
-    <g transform="translate(722 225)">
-      <circle r="26" fill="none" stroke="#2f6fe0" stroke-width="10" stroke-dasharray="7 6.8"/>
-      <circle r="22" fill="#2f6fe0"/>
-      <circle r="8" fill="#031447"/>
+    <g transform="translate(722 235)">
+      <circle r="26" stroke-width="10" stroke-dasharray="7 6.8"/>
+      <circle r="15" stroke-width="14"/>
     </g>
   </g>
 
   <!-- ring (echoes the logo) -->
   <circle cx="400" cy="225" r="215" fill="none" stroke="url(#ring)" stroke-width="5" stroke-linecap="round" stroke-dasharray="900 451" transform="rotate(150 400 225)"/>
-  <!-- lens flare -->
+  <!-- sparkle -->
   <circle cx="248" cy="73" r="38" fill="url(#flare)"/>
-  <path d="M248 36 L251.5 69.5 L285 73 L251.5 76.5 L248 110 L244.5 76.5 L211 73 L244.5 69.5 Z" fill="#fff" opacity="0.95"/>
+  <path d="M248 36 L251.5 69.5 L285 73 L251.5 76.5 L248 110 L244.5 76.5 L211 73 L244.5 69.5 Z" fill="#1959d5"/>
+  <circle cx="248" cy="73" r="5" fill="#fff"/>
 
   <!-- ground -->
-  <rect y="390" width="800" height="70" fill="#041340"/>
-  <rect y="390" width="800" height="3" fill="url(#blue)"/>
+  <rect y="390" width="800" height="70" fill="url(#ground)"/>
+  <rect y="390" width="800" height="4" fill="#1959d5"/>
 
   <!-- sign posts -->
-  <rect x="220" y="280" width="14" height="112" fill="#7d8aa5"/>
-  <rect x="566" y="280" width="14" height="112" fill="#7d8aa5"/>
+  <rect x="220" y="280" width="14" height="112" fill="#6b7a99"/>
+  <rect x="566" y="280" width="14" height="112" fill="#6b7a99"/>
 
   <!-- hard hat -->
-  <rect x="385" y="34" width="30" height="40" rx="6" fill="url(#blue)"/>
-  <path d="M335 92 A65 52 0 0 1 465 92 Z" fill="url(#silver)"/>
-  <rect x="318" y="88" width="164" height="14" rx="7" fill="#9aa9c2"/>
+  <rect x="385" y="34" width="30" height="40" rx="6" fill="#e8edf5" stroke="#0b2a80" stroke-width="2"/>
+  <path d="M335 92 A65 52 0 0 1 465 92 Z" fill="url(#blue)"/>
+  <rect x="318" y="88" width="164" height="14" rx="7" fill="#0b2a80"/>
 
   <!-- sign -->
-  <rect x="170" y="102" width="460" height="190" rx="16" fill="url(#silver)"/>
+  <rect x="170" y="102" width="460" height="190" rx="16" fill="url(#silver)" stroke="#6f86b3" stroke-width="3"/>
   <rect x="182" y="114" width="436" height="166" rx="9" fill="url(#face)" stroke="#3b82f0" stroke-width="2"/>
   <g font-family="'Segoe UI', Arial, Helvetica, sans-serif" font-weight="800" text-anchor="middle">
     <text x="400" y="192" font-size="50"><tspan fill="#f4f7fc">COMING </tspan><tspan fill="#4da3ff">SOON</tspan></text>
@@ -95,15 +95,15 @@
   <rect x="340" y="208" width="120" height="3" rx="1.5" fill="#1959d5"/>
 
   <!-- barrier -->
-  <rect x="110" y="320" width="580" height="46" fill="url(#hazard)" stroke="#aebbd3" stroke-width="3"/>
-  <rect x="140" y="366" width="14" height="26" fill="#7d8aa5"/>
-  <rect x="646" y="366" width="14" height="26" fill="#7d8aa5"/>
+  <rect x="110" y="320" width="580" height="46" fill="url(#hazard)" stroke="#0b2a80" stroke-width="3"/>
+  <rect x="140" y="366" width="14" height="26" fill="#6b7a99"/>
+  <rect x="646" y="366" width="14" height="26" fill="#6b7a99"/>
 
   <!-- cones -->
   <g id="cone">
     <path d="M55 388 L68 318 L82 318 L95 388 Z" fill="url(#blue)"/>
-    <polygon points="64.3,338 85.7,338 88.9,355 61.1,355" fill="#e8edf5"/>
-    <rect x="49" y="386" width="52" height="8" rx="3" fill="#0a2a7a"/>
+    <polygon points="64.3,338 85.7,338 88.9,355 61.1,355" fill="#fff"/>
+    <rect x="49" y="386" width="52" height="8" rx="3" fill="#0b2a80"/>
   </g>
   <use href="#cone" x="655"/>
 </svg>
