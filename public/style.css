@@ -145,24 +145,7 @@ html[lang="en"] body {
     mix-blend-mode: lighten;
 }
 
-.hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-    padding: 0.4rem 1.2rem;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.08);
-    color: rgba(255, 255, 255, 0.7);
-    font-weight: 600;
-    font-size: 0.85rem;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
-
 .hero-title {
-    margin-bottom: 1.2rem;
     font-size: clamp(2.2rem, 4.5vw, 3.6rem);
     font-weight: 900;
     line-height: 1.2;
@@ -174,13 +157,6 @@ html[lang="en"] body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.hero-subtitle {
-    max-width: 480px;
-    font-size: clamp(0.95rem, 1.3vw, 1.1rem);
-    line-height: 1.8;
-    color: rgba(255, 255, 255, 0.65);
 }
 
 .hero-visual {
@@ -221,8 +197,7 @@ html[lang="en"] body {
         text-align: center;
     }
 
-    .brand,
-    .hero-subtitle {
+    .brand {
         margin-inline: auto;
     }
 
